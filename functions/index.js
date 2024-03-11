@@ -14,9 +14,11 @@ const { region } = require("firebase-functions/v1");
 // Create and deploy your first functions
 // https://firebase.google.com/docs/functions/get-started
 
-exports.helloWorld = onRequest((request, response) => {
-  logger.info("Hello logs!", {structuredData: true});
-  response.send("Hello from Firebase!");
-});
+// exports.helloWorld = onRequest((request, response) => {
+//   logger.info("Hello logs!", {structuredData: true});
+//   response.send("Hello from Firebase!");
+// });
 
-
+exports.fireFunctions = onRequest((req, res) => {
+    res.status(200).send('Hello from Firebase Cloud Function!');
+  });
