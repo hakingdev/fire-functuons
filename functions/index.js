@@ -22,3 +22,4 @@ const { region } = require("firebase-functions/v1");
 exports.fireFunctions = onRequest((req, res) => {
     res.status(200).send('Hello from Firebase Cloud Function!');
   });
+ e
